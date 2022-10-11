@@ -6,14 +6,11 @@ for (let i = 0; i < 20; i++) {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('kivalogat').addEventListener('click', () => {
-
     oteloszt = lista.filter(e => e%5==0);
-    for (let i = 0; i < oteloszt.length; i++) {
-        console.log(oteloszt[i]);
-    }
+    console.log(oteloszt);
     });
     document.getElementById('hozzad').addEventListener('click', () => {
-        let szam = document.getElementById('szam');
+        let szam = parseInt(document.getElementById('szam').value);
         lista.push(szam);
     });  
 });

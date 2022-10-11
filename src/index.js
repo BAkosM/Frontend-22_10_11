@@ -23,7 +23,7 @@ class Szazlabu{
     toString(){
         return this.labakszama+" lábú százlábú";
     }
-    static labakbolSzazlabuk(t = []){
-        return t.map(e => new Szazlabu(e));
+    static labakbolSzazlabuk(lista = []){
+        return lista.map(e => new Szazlabu(e));
     }   
 }

@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 class Szazlabu{
     #labakszama;
-    Szazlabu(labakszama){
-        this.labakszama = labakszama;
+    constructor(labakszam){
+        this.labakSzama = labakszam;
     }
     toString(){
         return this.labakszama+" lábú százlábú";
     }
-}
-function labakbolSzazlabuk(lista){
-    return lista.map(e => new Szazlabu(e));
+    static labakbolSzazlabuk(t = []){
+        return t.map(e => new Szazlabu(e));
+    }   
 }

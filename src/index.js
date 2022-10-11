@@ -12,4 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(oteloszt[i]);
     }
     });
+    document.getElementById('hozzad').addEventListener('click', () => {
+        let szam = document.getElementById('szam');
+        lista.push(szam);
+    });  
 });
